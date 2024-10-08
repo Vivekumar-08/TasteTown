@@ -17,16 +17,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 65px;
+
 }
 
 nav {
-    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.2);
-    position: static;
-    top: 0;
-    margin-bottom: 32px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     background: white;
-    padding: 10px;
-
+    z-index: 999;
 }
 
 .container {
@@ -35,7 +35,7 @@ nav {
 }
 
 .logo {
-    color: #A80000;
+    color: #FF2B2B;
     font-size: 24px;
 }
 
@@ -43,9 +43,26 @@ nav {
 .nav-list {
     display: flex;
     align-items: center;
+    font-size: 20px;
     gap: 51px;
 }
 
+.nav-list .signup {
+    background: #FF2B2B;
+    border-radius: 50px;
+    height: 36px;
+    width: 100px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+.signup a {
+    text-decoration: none;
+    color: #ffffff;
+}
 
 nav li {
     list-style: none;
@@ -66,18 +83,19 @@ nav a:hover {
 
 /*------------------------------------- Home Container ----------------------------- */
 
-
-.homeContainer img {
-    height: 580px;
-    border-radius: 100%;
-}
-
 .homeContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 100px;
+    height: 100vh;
     margin-inline: 80px;
+}
+
+.homeContainer img {
+    height: 580px;
+    border-radius: 100%;
+
 }
 
 .homeText {
@@ -87,7 +105,7 @@ nav a:hover {
 
 .text {
     font-weight: bold;
-    color: #A80000;
+    color: #FF2B2B;
     font-size: 68px;
 }
 
@@ -97,7 +115,7 @@ p {
 }
 
 .order {
-    margin-top: 20px;
+    padding-top: 20px;
     display: flex;
     gap: 27px;
 }
@@ -107,14 +125,14 @@ p {
     width: auto;
     text-decoration: none;
     color: #ffffff;
-    background-color: #A80000;
+    background-color: #FF2B2B;
     font-size: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 20px;
     border-radius: 5px;
-    box-shadow: 1px 1px #ffffff;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -130,12 +148,11 @@ p {
     justify-content: center;
     padding: 0 20px;
     border-radius: 5px;
-    box-shadow: 1px 1px #ffffff;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
 }
 
 .featuresList {
-    margin-top: 12vh;
-    margin-bottom: 12vh;
+    padding-block: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,13 +188,6 @@ p {
 
 .list3 p {
     font-size: 14px;
-}
-
-.featuresList :hover {
-    color: #ffffff;
-    background-color: #dbcdaf;
-    border-radius: 8px;
-    transition: 0.2s ease-in-out;
 }
 
 .divider {
@@ -217,7 +227,6 @@ p {
     justify-content: center;
     gap: 51px;
     margin-top: 5vh;
-    margin-bottom: 5vh;
 }
 
 .menuContainerP {
@@ -544,4 +553,76 @@ span {
     font-size: 20px;
     color: #555555;
 }
+
+/*------------------------------------- Footer Container ----------------------------- */
+
+.footerContent {
+    display: flex;
+    gap: 60px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 380px;
+    background: #dbcdaf;
+    margin-top: 5vh;
+}
+
+.footerLogoText {
+    color: #A80000;
+    font-size: 26px;
+    font-weight: bold;
+    width: 302px;
+}
+
+.footerLogoText p {
+    color: #555555;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.footerList {
+    font-size: 26px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.footerList p {
+    font-size: 24px;
+    color: #555555;
+    font-weight: normal;
+}
+
+.footerList a i{
+    color: #000000;
+}
+
+.footerList a {
+    text-decoration: none;
+    color: #555555;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.contactList {
+    width: 350px;
+}
+
+.copyRightText {
+    color: #555555;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    background: #de705f;
+}
+
+
+
 
