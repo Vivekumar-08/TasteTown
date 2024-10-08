@@ -37,6 +37,12 @@ nav {
 .logo {
     color: #FF2B2B;
     font-size: 24px;
+    display: flex;
+}
+
+.logo img {
+    height: 48px;
+    width: 48px;
 }
 
 
@@ -80,6 +86,51 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.navMenuBar {
+    display: none;
+}
+
+/*------------------------------------- NavBarMediaQuery Container ----------------------------- */
+
+@media (max-width: 768px) {
+
+    .nav-list {
+        display: none;
+    }
+
+    .menuBtn {
+        color: #000000;
+        font-size: 26px;
+        cursor: pointer;
+    }
+
+    nav {
+        padding-inline: 100px;
+    }
+
+    .nav-list.active {
+        display: flex;
+        flex-direction: column;
+        backdrop-filter: blur(8px);
+        position: fixed;
+        top: 80px;
+        height: 100vh;
+        left: 0;
+        color: #000000;
+        background: white;
+        transition: all 0.5s ease;
+        width: 100vw;
+    }
+
+    .navMenuBar {
+        display: block;
+    }
+
+    .menuBtn {
+        display: block;
+    }
+}
+
 
 /*------------------------------------- Home Container ----------------------------- */
 
@@ -90,6 +141,7 @@ nav a:hover {
     gap: 100px;
     height: 100vh;
     margin-inline: 80px;
+    padding-top: 12.5vh;
 }
 
 .homeContainer img {
@@ -151,6 +203,22 @@ p {
     box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
 }
 
+.playVideo a {
+    height: 51px;
+    width: 51px;
+    color: #1E1E1E;
+    border-radius: 50%;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+.playVideo i {
+    font-size: 24px;
+}
+
 .featuresList {
     padding-block: 5vh;
     display: flex;
@@ -160,33 +228,13 @@ p {
 
 }
 
-.list1 {
+.list {
     width: 280px;
     display: flex;
     gap: 8px;
 }
 
-.list1 p {
-    font-size: 14px;
-}
-
-.list2 {
-    width: 280px;
-    display: flex;
-    gap: 8px;
-}
-
-.list2 p {
-    font-size: 14px;
-}
-
-.list3 {
-    width: 280px;
-    display: flex;
-    gap: 8px;
-}
-
-.list3 p {
+.list p {
     font-size: 14px;
 }
 
@@ -199,6 +247,7 @@ p {
 
 .menu {
     margin-inline: 80px;
+    padding-top: 12.5vh;
 }
 
 .menuHeaderText {
@@ -468,6 +517,7 @@ span {
     justify-content: center;
     height: 100vh;
     margin-inline: 80px;
+    padding-top: 12.5vh;
 }
 
 .offersText {
@@ -567,11 +617,12 @@ span {
     align-items: center;
     height: 380px;
     background: #dbcdaf;
-    margin-top: 5vh;
+    margin-top: 12.5vh;
+
 }
 
 .footerLogoText {
-    color: #A80000;
+    color: #FF2B2B;
     font-size: 26px;
     font-weight: bold;
     width: 302px;
@@ -595,7 +646,7 @@ span {
     font-weight: normal;
 }
 
-.footerList a i{
+.footerList a i {
     color: #000000;
 }
 
