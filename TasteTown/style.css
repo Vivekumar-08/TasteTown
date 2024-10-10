@@ -90,17 +90,21 @@ nav a:hover {
     display: none;
 }
 
+.menuBtn {
+    border: none;
+    background: none;
+}
+
 /*------------------------------------- NavBarMediaQuery Container ----------------------------- */
 
 @media (max-width: 768px) {
-
     .nav-list {
         display: none;
     }
 
     .menuBtn {
         color: #000000;
-        font-size: 26px;
+        font-size: 21px;
         cursor: pointer;
     }
 
@@ -109,17 +113,18 @@ nav a:hover {
     }
 
     .nav-list.active {
+        line-height: 1.5px;
         display: flex;
         flex-direction: column;
-        backdrop-filter: blur(8px);
         position: fixed;
-        top: 80px;
-        height: 100vh;
+        top: 65px;
+        height: 70vh;
+        padding-top: 5vh;
         left: 0;
         color: #000000;
         background: white;
-        transition: all 0.5s ease;
-        width: 100vw;
+        transition: all 0.5s ease-in-out;
+        width: 50vw;
     }
 
     .navMenuBar {
@@ -128,6 +133,17 @@ nav a:hover {
 
     .menuBtn {
         display: block;
+    }
+
+    .logo {
+        color: #FF2B2B;
+        font-size: 19px;
+        display: flex;
+    }
+
+    .logo img {
+        height: 38px;
+        width: 38px;
     }
 }
 
@@ -140,7 +156,7 @@ nav a:hover {
     justify-content: center;
     gap: 100px;
     height: 100vh;
-    margin-inline: 80px;
+    margin-inline: 80vh;
     padding-top: 12.5vh;
 }
 
@@ -242,6 +258,98 @@ p {
     border: 0.1px solid #ccc;
 }
 
+/*------------------------------------- HomeMediaQuery Container ----------------------------- */
+
+@media (max-width: 768px) {
+    .homeContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        padding-top: 14vh;
+        gap: 5vh;
+        margin-inline: 30px;
+    }
+
+    .homeContainer img {
+        height: 210px;
+        border-radius: 100%;
+    }
+
+    .homeText {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text {
+        font-weight: bold;
+        color: #FF2B2B;
+        font-size: 28px;
+    }
+
+    p {
+        color: #000000;
+        font-size: 17px
+    }
+
+    .order {
+        padding-top: 10px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .orderList a {
+        height: 37px;
+        width: auto;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #FF2B2B;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .watch a {
+        height: 37px;
+        width: auto;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #545454;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .playVideo a {
+        height: 37px;
+        width: 37px;
+        color: #1E1E1E;
+        border-radius: 50%;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .playVideo i {
+        font-size: 16px;
+    }
+
+    .features {
+        display: none;
+    }
+}
 
 /*------------------------------------- Menu Container ----------------------------- */
 
@@ -421,6 +529,153 @@ p {
     color: #FFE605;
 }
 
+/*------------------------------------- MenuMediaQuery Container ----------------------------- */
+
+@media (max-width: 768px) {
+    .menu {
+        margin-inline: 30px;
+        padding-top: 2vh;
+    }
+
+    .menuHeaderText {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .menuText {
+        font-size: 16px;
+        font-weight: bold;
+        color: #f7664f;
+    }
+
+    .menuText1 {
+        font-size: 22px;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .menuContent {
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .menuContainerP {
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+        height: 270px;
+        width: 250px;
+        border-radius: 40px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .menuContPItem {
+        height: 120px;
+        width: 120px;
+        background: #f7664f;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menuContPItem img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .menuContainerP p {
+        font-size: 18px;
+        color: #555555;
+    }
+
+    .menuContPItem2 {
+        height: 120px;
+        width: 120px;
+        background: #f7664f;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menuContPItem2 img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .menuContPItem4 {
+        height: 120px;
+        width: 120px;
+        background: #f7664f;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menuHeaderText1 {
+        text-align: start;
+    }
+
+    .menuTextCont1 {
+        color: #ff9500;
+        margin-top: 10vh;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .menuTextCont2 {
+        color: #000000;
+        font-size: 17px;
+        font-weight: bold;
+        height: 0;
+    }
+
+    .menuContent1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 17px;
+        padding-top: 2.5vh;
+    }
+
+    .menuContainerSM {
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+        height: 380px;
+        width: 300px;
+        border-radius: 40px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .menuContSItemImage img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .menuTextS1 h2 {
+        font-size: 20px;
+        color: #000000;
+        font-weight: bold;
+        text-align: start;
+    }
+
+
+}
 
 /*------------------------------------- Services Container ----------------------------- */
 
@@ -507,6 +762,96 @@ span {
     gap: 21px;
     justify-content: center;
     align-items: center;
+}
+
+/*------------------------------------- ServicesMediaQuery Container ----------------------------- */
+
+@media (max-width: 768px) {
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        margin-inline: 0;
+        margin-top: 12vh;
+    }
+
+    .imageContent {
+        background: #fa4120;
+        height: 200px;
+        width: 200px;
+        border-top-left-radius: 160px;
+        border-top-right-radius: 160px;
+    }
+
+    .aboutImage img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .aboutText {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        font-weight: bold;
+        color: #de705f;
+        width: 665px;
+    }
+
+    span {
+        margin-top: 5vh;
+        color: #000000;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .aboutText p {
+        width: 170px;
+        font-size: 9px;
+        color: #555555;
+    }
+
+    .feedback {
+        margin-top: 8vh;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .feedImage img {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+
+    .feedText {
+        font-size: 16px;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    .feedRating {
+        font-size: 16px;
+        color: #454545;
+        font-weight: bold;
+    }
+
+    .feedRating i {
+        color: #FFE605;
+    }
+
+    .reView {
+        color: #807E7E;
+        font-size: 16px;
+    }
+
+    .feedRating\&review {
+        display: flex;
+        gap: 17px;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /*------------------------------------- offers Container ----------------------------- */
@@ -604,7 +949,104 @@ span {
     color: #555555;
 }
 
-/*------------------------------------- Footer Container ----------------------------- */
+/*------------------------------------- OffersMediaQuery Container ----------------------------- */
+
+@media (max-width: 768px) {
+    .offers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        margin-inline: 0;
+        padding-top: 12vh;
+    }
+
+    .offersText {
+        display: flex;
+        flex-direction: column;
+        color: #de705f;
+        font-size: 12px;
+        font-weight: bold;
+        width: 665px;
+    }
+
+    .offersText span {
+        color: #000000;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .offersText p {
+        color: #555555;
+        font-size: 8px;
+        margin-top: 3vh;
+        width: 100px;
+    }
+
+    .explore {
+        background: #fa4120;
+        height: 61px;
+        width: 215px;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+        margin-top: 5vh;
+    }
+
+    .explore a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 24px;
+    }
+
+    .offerBox {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2vw;
+        margin-bottom: 3vh;
+    }
+
+    .offerBox1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    .boxImage {
+        height: 297.15px;
+        width: 277px;
+        border-radius: 30px;
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-inline: 12px;
+    }
+
+    .boxImage img {
+        height: 54px;
+        width: 54px;
+        padding-bottom: 5px;
+    }
+
+    .boxImage {
+        font-weight: bold;
+        font-size: 18px;
+        color: #fa4120;
+    }
+
+}
+
+/*------------------------------------- Footer & Contact Container ----------------------------- */
 
 .footerContent {
     display: flex;
@@ -672,6 +1114,71 @@ span {
     width: 100%;
     text-align: center;
     background: #de705f;
+}
+
+/*------------------------------------- Footer&ContactMediaQuery Container ----------------------------- */
+
+@media (max-width: 768px) {
+    .footerContent {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        background: #dbcdaf;
+        margin-top: 12.5vh;
+    }
+
+    .footerLogoText {
+        color: #FF2B2B;
+        font-size: 26px;
+        font-weight: bold;
+        width: 302px;
+    }
+
+    .footerLogoText p {
+        color: #555555;
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    .footerList {
+        font-size: 26px;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    .footerList p {
+        font-size: 24px;
+        color: #555555;
+        font-weight: normal;
+    }
+
+    .footerList a i {
+        color: #000000;
+    }
+
+    .footerList a {
+        text-decoration: none;
+        color: #555555;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    .contactList {
+        width: 350px;
+    }
+
 }
 
 
