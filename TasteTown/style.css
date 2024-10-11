@@ -7,23 +7,23 @@
 body {
     line-height: 1.4;
     font-family: Inter, sans-serif;
-    font-weight: 300;
 }
 
 /*-------------------------------- Navigation Bar Styles ----------------------------------*/
 
 .navbar {
     display: flex;
-    justify-content: space-between; /* Distribute space between logo and nav items */
+    justify-content: space-between;
     align-items: center;
     height: 50px;
-    margin-inline: 30px;
+    width: 100%;
+    padding-inline: 5vw;
 }
 
 nav {
     position: fixed;
     width: 100%;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Smoother shadow */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     background: white;
     z-index: 999;
 }
@@ -39,7 +39,7 @@ nav {
 }
 
 .logo img {
-    height: 28px;
+    height: 29px;
     width: 31px;
 }
 
@@ -47,19 +47,19 @@ nav {
     display: flex;
     align-items: center;
     font-size: 15px;
-    gap: 30px; /* Adjusted gap for consistency */
+    gap: 30px;
 }
 
 .nav-list .signup {
     background: #FF2B2B;
     border-radius: 50px;
-    height: 30px; /* Increased height */
-    width: 80px; /* Increased width */
+    height: 28px;
+    width: 80px;
     font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Smoother shadow */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .signup a {
@@ -92,16 +92,62 @@ nav a:hover {
     background: none;
 }
 
-/*------------------------------------- Home Container ----------------------------- */
+
+/*-------------------------------- Navigation Bar MediaQuery Styles ----------------------------------*/
+
+@media (max-width: 768px) {
+
+    .nav-list{
+        display: none;
+        margin: 10px 0;
+    }
+
+    .nav-list.active{
+        display: flex;
+        flex-direction: column;
+        background: #ffffff;
+        height: 40vh;
+        left: 0;
+        width: 60%;
+        top: 41px;
+        transition: all 0.5s ease;
+        position: fixed;
+        box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .navMenuBar {
+        display: block;
+    }
+
+    .menuBtn {
+        display: block;
+        font-size: 20px;
+    }
+
+    .logo {
+        color: #FF2B2B;
+        font-size: 14px;
+        display: flex;
+    }
+
+    .logo img {
+        height: 25px;
+        width: 27px;
+    }
+}
+
+/*------------------------------------- Home Styles ----------------------------- */
 
 .homeContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 60px;
     height: 100vh;
-    margin-inline: 10vh;
-    padding-top: 10vh;
+    width: 100%;
+    padding-inline: 5vw;
+    padding-top: 12vh;
 }
 
 .homeContainer img {
@@ -122,13 +168,13 @@ nav a:hover {
 
 p {
     color: #000000;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .order {
     padding-top: 20px;
     display: flex;
-    gap: 27px;
+    gap: 15px;
 }
 
 .orderList a,
@@ -136,11 +182,11 @@ p {
     height: 40px;
     text-decoration: none;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
+    padding: 0 12px;
     border-radius: 5px;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
 }
@@ -166,7 +212,7 @@ p {
 }
 
 .playVideo i {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .featuresList {
@@ -174,13 +220,13 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 35px;
+    gap: 30px;
 }
 
 .list {
     width: 220px;
     display: flex;
-    gap: 8px;
+    gap: 5px;
 }
 
 .list img {
@@ -193,32 +239,109 @@ p {
 }
 
 .divider {
-    border: 0.1px solid #ccc;
+    border: 1px solid #ccc;
 }
 
+/*------------------------------------- Home MediaQuery Styles----------------------------- */
 
-/*------------------------------------- Menu Container ----------------------------- */
+@media (max-width: 768px) {
+    .homeContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        height: fit-content;
+        width: 100%;
+        padding-inline: 5vw;
+        padding-top: 8vh;
+    }
+
+    .homeContainer img {
+        height: 300px;
+        border-radius: 100%;
+    }
+
+    .text {
+        font-weight: bold;
+        color: #FF2B2B;
+        font-size: 30px;
+        text-align: start;
+    }
+
+    .text p {
+        font-size: 14px;
+    }
+
+    .order {
+        padding-top: 20px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .orderList a,
+    .watch a {
+        height: 35px;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 12px;
+        border-radius: 5px;
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .playVideo a {
+        height: 35px;
+        width: 35px;
+        color: #1E1E1E;
+        border-radius: 50%;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .playVideo i {
+        font-size: 14px;
+    }
+
+    .featuresList {
+        padding-block: 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .list {
+        gap: 5px;
+    }
+}
+
+/*------------------------------------- Menu Styles ----------------------------- */
 
 .menu {
-    margin-inline: 10vh;
-    padding-top: 10vh;
+    padding-inline: 5vh;
+    padding-top: 11vh;
 }
 
 .menuHeaderText {
-    align-items: center;
     text-align: center;
-    justify-content: center;
 }
 
 .menuText {
-    margin-top: 5px;
     font-size: 20px;
     font-weight: bold;
     color: #f7664f;
 }
 
 .menuText1 {
-    font-size: 45px;
+    font-size: 46px;
     font-weight: bold;
     color: #000000;
 }
@@ -227,27 +350,27 @@ p {
     background: white;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 5vh;
-    gap: 15px;
+    justify-content: center;
+    padding-top: 5vh;
+    gap: 1vw;
 }
 
 .menuContainerP {
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
-    height: 280px;
-    width: 300px;
-    border-radius: 30px;
+    height: 250px;
+    width: 220px;
+    border-radius: 25px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 2px;
 }
 
 .menuContPItem, .menuContPItem2, .menuContPItem4 {
-    height: 153px;
-    width: 153px;
+    height: 130px;
+    width: 130px;
     background: #f7664f;
     border-radius: 50%;
     display: flex;
@@ -255,52 +378,68 @@ p {
     justify-content: center;
 }
 
-.menuContPItem img, .menuContPItem2 img, .menuContPItem4 img {
-    max-height: 100%; /* Use max-height for better responsiveness */
-    max-width: 100%;  /* Use max-width for better responsiveness */
+.menuContPItem img {
+     height: 110px;
+    width: 110px;
+}
+
+.menuContPItem2 img {
+    height: 75px;
+    width: 105px;
+}
+
+.menuContPItem4 img {
+    height: 100px;
+    width: auto;
 }
 
 .menuContainerP p {
-    font-size: 18px;
+    font-size: 16px;
     color: #555555;
+}
+
+.menuHeaderText1 {
+    text-align: start;
+    padding-left: 3vw;
 }
 
 .menuTextCont1 {
     color: #ff9500;
-    margin-top: 18vh;
+    padding-top: 12vh;
     font-size: 20px;
     font-weight: bold;
 }
 
 .menuTextCont2 {
     color: #000000;
-    font-size: 45px;
+    font-size: 46px;
     font-weight: bold;
+    width: 50%;
 }
 
 .menuContent1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    margin-top: 5vh;
+    gap: 1vw;
+    padding-top: 5vh;
 }
 
 .menuContainerSM {
-    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
-    height: 450px;
-    width: 350px;
-    border-radius: 40px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+    height: 310px;
+    width: 296px;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 2px;
 }
 
 .menuContSItemImage img {
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
 }
 
 .menuTextS1 {
@@ -309,20 +448,19 @@ p {
 }
 
 .menuTextS1 p {
-    font-size: 14px;
+    font-size: 15px;
     color: #555555;
 }
 
 .pR {
     display: flex;
-    gap: 40px;
-    padding-inline: 5vw;
+    gap: 35px;
 }
 
 .itemDollarPrice {
     display: flex;
     align-items: center;
-    font-size: 30px;
+    font-size: 18px;
     color: #000000;
     font-weight: bold;
 }
@@ -334,7 +472,7 @@ p {
 .rating {
     display: flex;
     align-items: center;
-    font-size: 30px;
+    font-size: 18px;
     color: #454545;
     font-weight: bold;
 }
@@ -344,24 +482,80 @@ p {
 }
 
 
+/*------------------------------------- Menu MediaQuery Styles ----------------------------- */
+@media (max-width: 768px) {
+    .menu {
+        padding-inline: 5vw;
+        padding-top: 5vh;
+    }
+
+    .menuText1 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .menuContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2vh;
+        gap: 1vh;
+    }
+
+    .menuTextCont1 {
+        color: #ff9500;
+        padding-top: 5vh;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .menuTextCont2 {
+        color: #000000;
+        font-size: 28px;
+        font-weight: bold;
+        width: auto;
+    }
+
+    .menuContent1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+        padding-top: 4vh;
+    }
+
+    .menuContainerSM {
+        height: 310px;
+        width: 250px;
+    }
+
+    .menuContSItemImage img {
+        height: 160px;
+        width: 160px;
+    }
+}
+
 /*------------------------------------- Services Container ----------------------------- */
 
 .aboutContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 80px;
     height: 100vh;
-    margin-inline: 10vh;
-    margin-top: 5vh;
+    width: 100%;
+    padding-inline: 5vw;
 }
 
 .imageContent {
     background: #fa4120;
-    height: 250px;
-    width: 300px;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
+    height: 255px;
+    width: 280px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 .aboutImage img {
@@ -375,13 +569,12 @@ p {
     font-size: 20px;
     font-weight: bold;
     color: #de705f;
-    width: 460px;
+    width: 90%;
 }
 
 span {
-    margin-top: 5vh;
     color: #000000;
-    font-size: 45px;
+    font-size: 46px;
     font-weight: bold;
 }
 
@@ -391,9 +584,9 @@ span {
 }
 
 .feedback {
-    margin-top: 8vh;
+    padding-top: 5vh;
     display: flex;
-    gap: 5px;
+    gap: 3px;
     justify-content: start;
     align-items: center;
 }
@@ -405,13 +598,13 @@ span {
 }
 
 .feedText {
-    font-size: 20px;
+    font-size: 16px;
     color: #000000;
     font-weight: bold;
 }
 
 .feedRating {
-    font-size: 16px;
+    font-size: 15px;
     color: #454545;
     font-weight: bold;
 }
@@ -422,14 +615,78 @@ span {
 
 .reView {
     color: #807E7E;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .feedRating\&review {
     display: flex;
-    gap: 21px;
+    gap: 3px;
     justify-content: center;
     align-items: center;
+}
+
+/*------------------------------------- Services MediaQuery Styles ----------------------------- */
+@media (max-width: 768px) {
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        height: fit-content;
+        width: 100%;
+        padding-inline: 5vw;
+        padding-top: 8vh;
+    }
+
+    .aboutText span {
+        font-size: 24px;
+    }
+
+    .aboutText p {
+        font-size: 11px;
+    }
+
+    .feedback {
+        padding-top: 3vh;
+        display: flex;
+        gap: 5px;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .feedImage img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .feedText {
+        font-size: 14px;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    .feedRating {
+        font-size: 13px;
+        color: #454545;
+        font-weight: bold;
+    }
+
+    .feedRating i {
+        color: #FFE605;
+    }
+
+    .reView {
+        color: #807E7E;
+        font-size: 13px;
+    }
+
+    .feedRating\&review {
+        display: flex;
+        gap: 2px;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
@@ -440,8 +697,10 @@ span {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin-inline: 10vh;
-    margin-top: 5vh;
+    width: 100%;
+    gap: 30px;
+    padding-top: 12vh;
+    padding-inline: 5vw;
 }
 
 .offersText {
@@ -461,49 +720,47 @@ span {
 .offersText p {
     color: #555555;
     font-size: 16px;
-    margin-top: 3vh;
-    width: 400px;
 }
 
 .explore {
     background: #fa4120;
-    height: 39px;
-    width: 120px;
+    height: 36px;
+    width: 130px;
     border-radius: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 5vh;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 3vh;
 }
 
 .explore a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .offerBox {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2vw;
-    margin-top: 15vh;
-    margin-bottom: 3vh;
+    gap: 1vw;
+    padding-bottom: 1vh;
 }
 
 .offerBox1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2vw;
+    gap: 1vw;
+    padding-top: 1vh;
 }
 
 .boxImage {
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
     border-radius: 30px;
-    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -513,9 +770,8 @@ span {
 }
 
 .boxImage img {
-    height: 64px;
-    width: 64px;
-    padding-bottom: 5px;
+    height: 54px;
+    width: 54px;
 }
 
 .boxImage {
@@ -525,15 +781,56 @@ span {
 }
 
 .boxImage p {
-    font-size: 14px;
+    font-size: 10px;
     color: #555555;
+}
+
+/*------------------------------------- offers MediaQuery Styles ----------------------------- */
+@media (max-width: 768px) {
+    .offers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        width: 100%;
+        gap: 30px;
+        padding-top: 8vh;
+        padding-inline: 5vw;
+    }
+
+    .offers span {
+        font-size: 26px;
+    }
+
+    .offers p {
+        font-size: 13px;
+    }
+
+    .offerBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+    }
+
+    .offerBox1 {
+        padding-top: 1vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+    }
+
 }
 
 /*------------------------------------- Footer & Contact Container ----------------------------- */
 
 .footerContent {
     display: flex;
-    gap: 20px;
+    gap: 3vw;
 }
 
 .footer {
@@ -541,32 +838,32 @@ span {
     justify-content: center;
     align-items: center;
     height: 180px;
+    width: 100%;
+    margin-top: 5vh;
     background: #dbcdaf;
-    margin-top: 12.5vh;
 
 }
 
 .footerLogoText {
     color: #FF2B2B;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
-    width: 200px;
 }
 
 .footerLogoText p {
     color: #555555;
-    font-size: 16px;
-    font-weight: normal;
+    font-size: 14px;
+    width: 17vw;
 }
 
 .footerList {
-    font-size: 16px;
+    font-size: 15px;
     color: #000000;
     font-weight: bold;
 }
 
 .footerList p {
-    font-size: 16px;
+    font-size: 14px;
     color: #555555;
     font-weight: normal;
 }
@@ -581,20 +878,81 @@ span {
     display: flex;
     align-items: center;
     justify-content: start;
-    gap: 10px;
-    font-size: 18px;
+    gap: 3px;
+    font-size: 14px;
     font-weight: normal;
 }
 
 .contactList {
-    width: 350px;
+    width: 22vw;
 }
 
 .copyRightText {
     color: #555555;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     width: 100%;
     text-align: center;
     background: #de705f;
+}
+
+/*------------------------------------- Footer & Contact MediaQuery Styles ----------------------------- */
+@media (max-width: 768px) {
+    .footerContent {
+        display: flex;
+        gap: 2px;
+    }
+
+    .footer {
+        height: 100px;
+        padding-inline: 5vw;
+    }
+
+    .footerLogoText {
+        color: #FF2B2B;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    .footerLogoText p{
+        color: #555555;
+        font-size: 8px;
+    }
+
+    .footerList {
+        font-size: 10px;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    .footerList p {
+        font-size: 8px;
+        color: #555555;
+        font-weight: normal;
+    }
+
+    .footerList a i {
+        color: #000000;
+        font-size: 7px;
+    }
+
+    .footerList a {
+        text-decoration: none;
+        color: #555555;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 3px;
+        font-size: 6px;
+        font-weight: normal;
+    }
+
+    .copyRightText {
+        color: #555555;
+        font-size: 10px;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        background: #de705f;
+    }
 }
