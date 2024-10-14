@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 80px;
     width: 100%;
     padding-inline: 5vw;
 }
@@ -34,13 +34,13 @@ nav {
 
 .logo {
     color: #FF2B2B;
-    font-size: 15px;
+    font-size: 18px;
     display: flex;
 }
 
 .logo img {
-    height: 29px;
-    width: 31px;
+    height: 32px;
+    width: 34px;
 }
 
 .nav-list {
@@ -53,9 +53,9 @@ nav {
 .nav-list .signup {
     background: #FF2B2B;
     border-radius: 50px;
-    height: 28px;
-    width: 80px;
-    font-size: 14px;
+    height: 32px;
+    width: 100px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,7 +106,7 @@ nav a:hover {
         display: flex;
         flex-direction: column;
         background: #ffffff;
-        height: 40vh;
+        height: 60vh;
         left: 0;
         width: 60%;
         top: 41px;
@@ -122,18 +122,18 @@ nav a:hover {
 
     .menuBtn {
         display: block;
-        font-size: 20px;
+        font-size: 23px;
     }
 
     .logo {
         color: #FF2B2B;
-        font-size: 14px;
+        font-size: 16px;
         display: flex;
     }
 
     .logo img {
-        height: 25px;
-        width: 27px;
+        height: 26px;
+        width: 28px;
     }
 }
 
@@ -142,7 +142,7 @@ nav a:hover {
 .home {
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("image/homeBackground.png");
+    background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)),url("image/img.png");
     background-size: cover;
     background-position: center;
 }
@@ -150,31 +150,31 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 60px;
     height: 100vh;
     width: 100%;
     padding-inline: 5vw;
-    padding-top: 12vh;
+    text-align: center;
 }
 
 .homeText {
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
 .text {
     font-weight: bold;
     color: #FF2B2B;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 p {
-    color: #000000;
-    font-size: 17px;
+    color: #f5f5ff;
+    font-size: 26px;
 }
 
 .order {
-    padding-top: 20px;
+    padding-top: 30px;
     display: flex;
     gap: 15px;
 }
@@ -184,7 +184,7 @@ p {
     height: 40px;
     text-decoration: none;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,7 +198,7 @@ p {
 }
 
 .watch a {
-    background-color: #545454;
+    background-color: #4c4c4c;
 }
 
 .playVideo a {
@@ -207,6 +207,7 @@ p {
     color: #1E1E1E;
     border-radius: 50%;
     display: flex;
+    background: #ffffff;
     text-decoration: none;
     align-items: center;
     justify-content: center;
@@ -218,7 +219,7 @@ p {
 }
 
 .featuresList {
-    padding-block: 5vh;
+    padding-block: 4vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -226,24 +227,24 @@ p {
 }
 
 .list {
-    width: 220px;
+    width: 210px;
     display: flex;
     gap: 5px;
 }
 
 .list img {
-    height: 52px;
-    width: 50px;
+    height: 53px;
+    width: 52px;
 }
 
 .list p {
-    font-size: 10px;
+    font-size: 7px;
+    color: #000000;
 }
 
 .divider {
     border: 1px solid #ccc;
 }
-
 /*------------------------------------- Home MediaQuery Styles----------------------------- */
 
 @media (max-width: 768px) {
@@ -262,12 +263,12 @@ p {
     .text {
         font-weight: bold;
         color: #FF2B2B;
-        font-size: 30px;
+        font-size: 45px;
         text-align: start;
     }
 
     .text p {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .order {
@@ -278,10 +279,10 @@ p {
 
     .orderList a,
     .watch a {
-        height: 35px;
+        height: 38px;
         text-decoration: none;
         color: #ffffff;
-        font-size: 14px;
+        font-size: 16px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -291,8 +292,8 @@ p {
     }
 
     .playVideo a {
-        height: 35px;
-        width: 35px;
+        height: 38px;
+        width: 38px;
         color: #1E1E1E;
         border-radius: 50%;
         display: flex;
@@ -303,7 +304,7 @@ p {
     }
 
     .playVideo i {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .featuresList {
@@ -324,7 +325,7 @@ p {
 
 .menu {
     padding-inline: 5vh;
-    padding-top: 11vh;
+    padding-top: 18vh;
 }
 
 .menuHeaderText {
