@@ -1,0 +1,300 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.logo img {
+  width: 14vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 4px 0.1px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+}
+
+input {
+  width: 25vw;
+  height: 6vh;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.search {
+  display: flex;
+  background: #ffffff;
+  z-index: 1000;
+  padding: 10px 20px;
+}
+
+.search button {
+  height: 6vh;
+  width: 4vw;
+  background-color: #FF2B2B;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+.headerContent__location {
+  font-size: 26px;
+}
+
+ul li {
+  display: inline;
+  padding: 18px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+li:hover {
+  border: #000000 1.5px solid;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menuBar {
+  display: none;
+}
+
+.searchIcon {
+  display: none;
+}
+
+/*-------------------------------- Header MediaQuery Styles ----------------------------------*/
+@media (max-width: 768px) {
+
+  .logo img {
+    width: 120px;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .header {
+    height: 60px;
+  }
+
+
+  .search {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.active {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px;
+  }
+
+  .menuBar {
+    display: block;
+  }
+
+  .btnMenu {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  ul li {
+    padding: 5px;
+  }
+
+  a {
+    font-size: 11px;
+  }
+
+  .searchIcon {
+    display: block;
+  }
+
+  .search.active {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px;
+
+  }
+
+  input {
+    width: 60vw;
+    height: 5vh;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .search button {
+    height: 5vh;
+    width: 17vw;
+    background-color: #FF2B2B;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .btnSearch {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .headerContent__location {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+
+}
+
+/*-------------------------------- Home Styles sheet ----------------------------------*/
+
+.home {
+  margin: 0 20px 0 20px;
+  background-color: #ffffff; 
+}
+
+.home__container {
+  height: 100vh; 
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+  gap: 20px;
+}
+ 
+.home__img img{
+  width: 40vw;  
+  height: auto;
+}
+
+.home__title {
+  font-size: 48px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.home__subtitle {
+  font-size: 24px; 
+  font-weight: 400;
+}
+
+.order {
+  font-size: 21px;
+  width: 10vw;
+  height: 6vh;
+  border: none;
+  background-color: #FF2B2B;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 3vh;
+}
+
+.order:hover { 
+  text-decoration: underline;  
+}
+
+.divider {
+  border: 1px solid #c00606;
+}
+
+/*-------------------------------- Header MediaQuery Styles ----------------------------------*/
+
+@media (max-width: 768px) {
+  .home__container {
+    flex-direction: column-reverse; 
+  }
+
+  .home__img img {
+    width: 90vw;
+  }
+
+  .home__title {
+    font-size: 17px;
+  }
+
+  .home__subtitle {
+    margin-top: 3vh;
+    font-size: 11px;
+  }
+
+  .order {
+    width: 32vw;
+    height: 5vh;
+    font-size: 15px;
+  }
+  
+}
+
+
+/*-------------------------------- Menu Styles sheet ----------------------------------*/
+
+.menuBody { 
+  background-color: #f1eeeee8;
+  margin: 0 20px 0 20px;
+}
+
+.menu__container {
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  text-align: center;
+}
+
+.menu__title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000000; 
+}
+
+.menu__subtitle {
+  font-size: 26px; 
+  font-weight: 500;
+  color: #000000; 
+}
+
