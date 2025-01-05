@@ -7,7 +7,7 @@ import Home from './component/home'
 import Menu from './component/menu'
 
 function App() {
-
+  
   return (
     <>
       <Header />

@@ -275,26 +275,64 @@ li:hover {
 /*-------------------------------- Menu Styles sheet ----------------------------------*/
 
 .menuBody { 
-  background-color: #f1eeeee8;
+  background-color: #ffffff;
+  /* #f1eeeee8 */
   margin: 0 20px 0 20px;
+  height: 100vh;
 }
 
-.menu__container {
-  height: 100vh;
-  display: flex;
-  justify-content: center; 
+.menu__container { 
+  display: flex; 
+  justify-content: center;
   text-align: center;
 }
 
 .menu__title {
-  font-size: 48px;
-  font-weight: 700;
-  color: #000000; 
+  font-size: 30px; 
+  font-weight: 500;
+  color: #262626; 
 }
 
 .menu__subtitle {
-  font-size: 26px; 
-  font-weight: 500;
-  color: #000000; 
+  font-size: 46px;
+  font-weight: 700;
+  color: #5d5d5d;
 }
 
+.menu__list__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  text-align: center;
+  gap: 30px;
+  margin: 20px 0px; 
+  overflow-x: scroll; 
+}
+
+.menu__list__data::-webkit-scrollbar { 
+  display: none;
+}
+
+.menu__list__data__item img {
+  width: 20vw; 
+  max-width: 130px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.2s;
+} 
+
+.menu__list__data__item p {
+  margin-top: 5px;
+  color: #1f1f1f;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.menu__list__data__item img:hover {
+  transform: scale(1.1);
+}
+
+.menu__list__data__item p:hover {
+  transform: scale(1.1);
+}
