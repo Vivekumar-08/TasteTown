@@ -195,19 +195,19 @@ li:hover {
 
 .home {
   margin: 0 20px 0 20px;
-  background-color: #ffffff; 
+  background-color: #ffffff;
 }
 
 .home__container {
-  height: 100vh; 
-  display: flex; 
+  height: 100vh;
+  display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   gap: 20px;
 }
- 
-.home__img img{
-  width: 40vw;  
+
+.home__img img {
+  width: 40vw;
   height: auto;
 }
 
@@ -218,7 +218,7 @@ li:hover {
 }
 
 .home__subtitle {
-  font-size: 24px; 
+  font-size: 24px;
   font-weight: 400;
 }
 
@@ -235,8 +235,8 @@ li:hover {
   margin-top: 3vh;
 }
 
-.order:hover { 
-  text-decoration: underline;  
+.order:hover {
+  text-decoration: underline;
 }
 
 .divider {
@@ -247,7 +247,7 @@ li:hover {
 
 @media (max-width: 768px) {
   .home__container {
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
   }
 
   .home__img img {
@@ -268,29 +268,29 @@ li:hover {
     height: 5vh;
     font-size: 15px;
   }
-  
+
 }
 
 
 /*-------------------------------- Menu Styles sheet ----------------------------------*/
 
-.menuBody { 
-  background-color: #ffffff;
-  /* #f1eeeee8 */
-  margin: 0 20px 0 20px;
+.menuBody {
+  background-color: #f1eeeee8;
   height: 100vh;
+  padding: 0 20px 0 20px;
+  padding-top: 10vh;
 }
 
-.menu__container { 
-  display: flex; 
+.menu__container {
+  display: flex;
   justify-content: center;
   text-align: center;
 }
 
 .menu__title {
-  font-size: 30px; 
+  font-size: 30px;
   font-weight: 500;
-  color: #262626; 
+  color: #262626;
 }
 
 .menu__subtitle {
@@ -302,27 +302,27 @@ li:hover {
 .menu__list__data {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   text-align: center;
   gap: 30px;
-  margin: 20px 0px; 
-  overflow-x: scroll; 
+  margin: 20px 0px;
+  overflow-x: scroll;
 }
 
-.menu__list__data::-webkit-scrollbar { 
+.menu__list__data::-webkit-scrollbar {
   display: none;
 }
 
 .menu__list__data__item img {
-  width: 20vw; 
+  width: 20vw;
   max-width: 130px;
   cursor: pointer;
   border-radius: 50%;
   transition: 0.2s;
-} 
+}
 
 .menu__list__data__item p {
-  margin-top: 5px;
+  margin-top: 3px;
   color: #1f1f1f;
   cursor: pointer;
   font-weight: 500;
@@ -335,4 +335,28 @@ li:hover {
 
 .menu__list__data__item p:hover {
   transform: scale(1.1);
+}
+
+/*-------------------------------- Menu MediaQuery Styles ----------------------------------*/
+@media (max-width: 768px) {
+  .menu__container {
+    flex-direction: column;
+  }
+
+  .menu__title {
+    font-size: 20px;
+  }
+
+  .menu__subtitle {
+    font-size: 30px;
+  }
+  
+  .menu__list__data { 
+    gap: 10px;
+    margin: 10px 0px;
+  }
+
+  .menu__list__data__item p {
+    font-size: 12px;
+  }
 }
