@@ -199,7 +199,7 @@ li:hover {
 }
 
 .home__container {
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -276,7 +276,7 @@ li:hover {
 
 .menuBody {
   background-color: #f1eeeee8;
-  height: 100vh;
+  height: 100%;
   padding: 0 20px 0 20px;
   padding-top: 10vh;
 }
@@ -350,8 +350,8 @@ li:hover {
   .menu__subtitle {
     font-size: 30px;
   }
-  
-  .menu__list__data { 
+
+  .menu__list__data {
     gap: 10px;
     margin: 10px 0px;
   }
@@ -359,4 +359,160 @@ li:hover {
   .menu__list__data__item p {
     font-size: 12px;
   }
+}
+
+
+/*---- Menu Food Styles sheet ----*/
+
+.menu__food__content__title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #262626;
+  padding-top: 10vh;
+}
+
+.menu__food__content__subtitle {
+  font-size: 46px;
+  font-weight: 600;
+  color: tomato;
+}
+
+.food__list__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin: 20px 0px;
+  overflow-x: scroll;
+}
+
+.food__list__data::-webkit-scrollbar {
+  display: none;
+}
+
+.food__list__data__item {
+  width: 15vw;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.food__list__data__item img {
+  width: 22vw;
+  max-width: 190px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.food__list__data__item img:hover {
+  transform: scale(1.1);
+}
+
+.food__name {
+  margin-top: 3px;
+  color: #1f1f1f;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 19px;
+  text-align: left;
+}
+
+.rupee__icon {
+  font-size: 19px;
+  color: rgba(255, 99, 71, 0.885);
+}
+
+.price__content {
+  display: flex;
+  color: #1f1f1f;
+  gap: 10px;
+  justify-content: left;
+  margin-top: 2px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.food__price__discount {
+  color: #818080;
+  text-decoration: line-through;
+}
+
+.rating__content {
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+  margin-top: 2px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.star__icon {
+  color: #025514;
+}
+
+.delivery__time {
+  color: #4f4f4f;
+}
+
+.food__delivery {
+  color: #282727;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  text-align: left;
+}
+
+/*---- Menu Food Styles sheet MediaQuery Styles ----*/
+@media screen and (max-width: 768px) {
+  .food__list__data {
+    gap: 10px;
+    margin: 10px 0px;
+  }
+
+  .food__list__data__item {
+    width: 40vw;
+    padding: 10px;
+  }
+
+  .food__list__data__item img {
+    width: 36vw;
+  }
+
+  .food__name {
+    font-size: 12px;
+  }
+
+  .rupee__icon {
+    font-size: 12px;
+  }
+
+  .price__content {
+    font-size: 10px;
+  }
+
+  .food__price__discount {
+    font-size: 10px;
+  }
+
+  .rating__content {
+    font-size: 10px;
+  }
+
+  .star__icon {
+    font-size: 10px;
+  }
+
+  .delivery__time {
+    font-size: 10px;
+  }
+
+  .food__delivery {
+    font-size: 10px;
+  }
+  
 }
