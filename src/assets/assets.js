@@ -21,6 +21,8 @@ import menu__21 from './menu__21.jpg'
 import menu__22 from './menu__22.jpg'
 import menu__23 from './menu__23.jpg'
 
+import offer__1 from './offer__1.jpg'
+
 export const menu__list = [
     {
         menu__name: "Burger",
@@ -296,5 +298,26 @@ export const menu__food__01 = [
         food__delivery: "Free Delivery",
         food__category: "Fast Food",
     },
+
+]
+
+export const offer__list = [
+    {
+        offer__name: "Burger",
+        offer__price__discount: "Up to 50% Off",
+    },
+    {
+        offer__name: "Burger",
+        offer__price__discount: "Up to 5% Off",
+    },
+    {
+        offer__name: "Bhnghnr",
+        offer__price__discount: "Up to 50% Off",
+    },
+    {
+        offer__name: "Burgevgr",
+        offer__price__discount: "Up to 50% Off",
+    },
+
 
 ]

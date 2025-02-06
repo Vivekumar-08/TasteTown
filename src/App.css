@@ -199,7 +199,7 @@ li:hover {
 }
 
 .home__container {
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -469,6 +469,14 @@ li:hover {
 
 /*---- Menu Food Styles sheet MediaQuery Styles ----*/
 @media screen and (max-width: 768px) {
+  .menu__food__content__title {
+    font-size: 26px;
+  }
+
+  .menu__food__content__subtitle {
+    font-size: 28px;
+  }
+
   .food__list__data {
     gap: 10px;
     margin: 10px 0px;
@@ -514,5 +522,76 @@ li:hover {
   .food__delivery {
     font-size: 10px;
   }
-  
+
+}
+
+/*-------------------------------- Offer Styles sheet ----------------------------------*/
+
+.offer__container {
+  background-color: #ffffff;
+  height: 100vh;
+  padding: 0 20px 0 20px;
+  padding-top: 12vh;
+}
+
+.offer__heading__title {
+  font-size: 30px;
+  font-weight: 500;
+  color: #262626;
+}
+
+.offer__heading__subtitle {
+  font-size: 28px;
+  font-weight: 600;
+  color: #5d5d5d;
+}
+
+.offer__list__data {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 36px 0px;
+  gap: 20px;
+
+}
+
+.offer__list__data__item {
+  width: 28vw;
+  height: 40vh;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.offer__image {
+  max-width: 100%;
+  height: 100%;
+  background-image: url('./assets/offer__1.jpg');
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-repeat: no-repeat;
+  justify-content: center;
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  display: flex;
+  align-items: last baseline;
+  padding-bottom: 8px;
+}
+
+.offer__bottom__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #ff2b2bd3;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 42px;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  align-items: center;
+  font-weight: 600;
 }

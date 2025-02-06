@@ -1,6 +1,4 @@
-import { menu__food__01, menu__list } from '../assets/assets';
-import { menu__list__01 } from '../assets/assets';
-import { menu__food } from '../assets/assets';
+import { menu__food__01, menu__list, menu__food, menu__list__01 } from '../assets/assets';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faIndianRupeeSign } from '@fortawesome/free-solid-svg-icons';
 
@@ -90,6 +88,7 @@ export default function Menu() {
                     </div>
                 </div>
             </section>
+            <div className="divider"></div>
         </>
     );
 }

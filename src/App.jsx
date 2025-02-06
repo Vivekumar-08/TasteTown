@@ -5,6 +5,7 @@ import './App.css'
 import Header from './component/header'
 import Home from './component/home'
 import Menu from './component/menu'
+import Offer from './component/Offer'
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Home />
       <Menu />
+      <Offer />
     </>
   )
 }
