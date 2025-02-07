@@ -372,7 +372,7 @@ li:hover {
 .menu__food__content {
   background-color: #f1eeeee8;
   height: 100%;
-  padding: 0 20px 0 20px;
+  padding: 0 110px 0 110px;
   width: 100%;
   padding-top: 6vh;
   padding-bottom: 3px;
@@ -408,25 +408,25 @@ li:hover {
 .food__list__data__item {
   width: 20vw;
   height: 58vh;
-  background-color: #ffffff; 
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
 }
 
 .food__data {
-  padding: 12px; 
+  padding: 12px;
 }
 
 .food__list__data__item img {
   width: 20vw;
   height: 33vh;
   max-width: 19.7vw;
-  cursor: pointer;  
+  cursor: pointer;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-} 
+}
 
-.food__name { 
+.food__name {
   color: #1f1f1f;
   cursor: pointer;
   font-weight: 600;
@@ -441,7 +441,7 @@ li:hover {
 
 .price__content {
   display: flex;
-  color: #1f1f1f; 
+  color: #1f1f1f;
   gap: 10px;
   justify-content: left;
   margin-top: 2px;
@@ -485,7 +485,10 @@ li:hover {
 @media screen and (max-width: 768px) {
   .menu__food__content {
     padding-top: 3vh;
+    padding: 0 20px 0 20px;
+    padding-bottom: 3px;
   }
+
   .menu__food__content__title {
     font-size: 26px;
   }
@@ -500,7 +503,7 @@ li:hover {
   }
 
   .food__list__data__item {
-    width: 43vw; 
+    width: 43vw;
     height: 35vh;
   }
 
@@ -548,9 +551,9 @@ li:hover {
 
 .offer__container {
   background-color: #ffffff;
-  height: 100vh;
+  height: 90vh;
   padding: 0 20px 0 20px;
-  padding-top: 12vh;
+  padding-top: 6vh;
 }
 
 .offer__heading__title {
@@ -580,7 +583,7 @@ li:hover {
 
 .offer__list__data__item {
   width: 30vw;
-  height: 50vh;
+  height: 46.7vh;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
@@ -589,7 +592,7 @@ li:hover {
 .offer__image {
   width: 30vw;
   max-width: 30vw;
-  height: 100%;
+  height: 40vh;
   background-image: url('./assets/offer__1.jpg');
   background-size: cover;
   background-position: center;
@@ -612,10 +615,10 @@ li:hover {
   background-color: #ff2b2bd3;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  height: 42px;
+  height: 43px;
   width: 100%;
   color: #fff;
-  font-size: 18px;
+  font-size: 19px;
   align-items: center;
   font-weight: 600;
 }
@@ -632,25 +635,156 @@ li:hover {
 
   .offer__list__data {
     gap: 10px;
-    margin: 10px 0px;
+    margin: 18px 0px;
   }
 
   .offer__list__data__item {
-    width: 85vw;
-    height: 30vh;
+    width: 86vw;
+    height: 40vh;
   }
 
   .offer__image {
-    width: 85vw;
-    max-width: 85vw;
-    height: 100%;
+    width: 86vw;
+    max-width: 86vw;
+    height: 33vh;
     font-size: 17px;
   }
 
   .offer__bottom__content {
     padding: 10px;
-    height: 30px;
+    height: 35px;
     font-size: 15px;
   }
 
+}
+
+/*-------------------------------- Footer Styles sheet ----------------------------------*/
+.footer-container {
+  background-color: #d1d0d0;
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  padding: 50px 80px 0 80px;
+}
+
+.logo-footer img {
+  width: 17vw;
+}
+
+.menu-item-footer ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menu-item-footer ul li:hover {
+  border: none;
+  border-radius: none;
+}
+
+.menu-item-footer ul li {
+  padding: 6px;
+}
+
+.location-delivery ul {
+  display: flex;
+  flex-direction: column;
+  color: #4f4f4f;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.location-delivery ul li:hover {
+  border: none;
+  border-radius: none;
+}
+
+.location-delivery ul li {
+  padding: 3px;
+}
+
+.location-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.location-address {
+  font-size: 15px;
+  font-weight: 500;
+  color: #4f4f4f;
+}
+
+.social-media ul {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.social-media ul li:hover {
+  border: none;
+  border-radius: none;
+}
+
+.social-media ul li {
+  padding: 5px;
+}
+
+/*-------------------------------- Footer MediaQuery Styles ----------------------------------*/
+@media (max-width: 768px) {
+  .footer-container {
+    height: 80vh;
+    flex-wrap: wrap;
+    padding: 20px 20px 0 20px;
+  }
+
+  .logo-footer img {
+    width: 120px;
+  }
+
+  .menu-item-footer ul {
+    padding-left: 8px;
+    font-size: 14px;
+  }
+
+  .menu-item-footer ul li {
+    padding: 2px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .location-delivery ul {
+    padding-left: 0;
+    font-size: 14px;
+  }
+
+  .location-delivery ul li {
+    padding: 0;
+  }
+
+  .location-name {
+    font-size: 13px;
+  }
+
+  .location-address {
+    font-size: 12px;
+  }
+
+  .social-media ul {
+    padding-left: 0;
+    font-size: 14px;
+  }
+
+  .social-media ul li {
+    padding: 2px;
+  }
 }
