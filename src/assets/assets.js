@@ -311,13 +311,12 @@ export const offer__list = [
         offer__price__discount: "Up to 5% Off",
     },
     {
-        offer__name: "Bhnghnr",
-        offer__price__discount: "Up to 50% Off",
+        offer__name: "Burger",
+        offer__price__discount: "Up to 5% Off",
     },
     {
-        offer__name: "Burgevgr",
-        offer__price__discount: "Up to 50% Off",
+        offer__name: "Burger",
+        offer__price__discount: "Up to 5% Off",
     },
-
 
 ]

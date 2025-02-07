@@ -204,6 +204,7 @@ li:hover {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  width: 100%;
 }
 
 .home__img img {
@@ -276,9 +277,10 @@ li:hover {
 
 .menuBody {
   background-color: #f1eeeee8;
-  height: 100%;
+  height: 80vh;
   padding: 0 20px 0 20px;
-  padding-top: 10vh;
+  padding-top: 12vh;
+  width: 100%;
 }
 
 .menu__container {
@@ -305,7 +307,7 @@ li:hover {
   align-items: center;
   text-align: center;
   gap: 30px;
-  margin: 20px 0px;
+  margin: 10px 0px;
   overflow-x: scroll;
 }
 
@@ -339,6 +341,10 @@ li:hover {
 
 /*-------------------------------- Menu MediaQuery Styles ----------------------------------*/
 @media (max-width: 768px) {
+  .menuBody {
+    height: 70vh;
+  }
+
   .menu__container {
     flex-direction: column;
   }
@@ -363,12 +369,18 @@ li:hover {
 
 
 /*---- Menu Food Styles sheet ----*/
+.menu__food__content {
+  background-color: #f1eeeee8;
+  height: 100%;
+  padding: 0 20px 0 20px;
+  width: 100%;
+  padding-bottom: 3px;
+}
 
 .menu__food__content__title {
   font-size: 30px;
   font-weight: 600;
   color: #262626;
-  padding-top: 10vh;
 }
 
 .menu__food__content__subtitle {
@@ -384,6 +396,8 @@ li:hover {
   gap: 30px;
   margin: 20px 0px;
   overflow-x: scroll;
+  width: 100%;
+
 }
 
 .food__list__data::-webkit-scrollbar {
@@ -391,7 +405,7 @@ li:hover {
 }
 
 .food__list__data__item {
-  width: 15vw;
+  width: 22vw;
   background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
@@ -401,7 +415,7 @@ li:hover {
 
 .food__list__data__item img {
   width: 22vw;
-  max-width: 190px;
+  max-width: 19.7vw;
   cursor: pointer;
   border-radius: 50%;
   transition: 0.2s;
@@ -483,12 +497,13 @@ li:hover {
   }
 
   .food__list__data__item {
-    width: 40vw;
+    width: 42vw;
     padding: 10px;
   }
 
   .food__list__data__item img {
-    width: 36vw;
+    width: 40vw;
+    max-width: 35.5vw;
   }
 
   .food__name {
@@ -543,7 +558,7 @@ li:hover {
 .offer__heading__subtitle {
   font-size: 28px;
   font-weight: 600;
-  color: #5d5d5d;
+  color: #9d3636;
 }
 
 .offer__list__data {
@@ -551,20 +566,25 @@ li:hover {
   align-items: center;
   justify-content: space-around;
   margin: 36px 0px;
-  gap: 20px;
+  gap: 42px;
+  overflow-x: scroll;
+}
 
+.offer__list__data::-webkit-scrollbar {
+  display: none;
 }
 
 .offer__list__data__item {
-  width: 28vw;
-  height: 40vh;
+  width: 30vw;
+  height: 50vh;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
 }
 
 .offer__image {
-  max-width: 100%;
+  width: 30vw;
+  max-width: 30vw;
   height: 100%;
   background-image: url('./assets/offer__1.jpg');
   background-size: cover;
@@ -594,4 +614,39 @@ li:hover {
   font-size: 18px;
   align-items: center;
   font-weight: 600;
+}
+
+/*-------------------------------- Offer MediaQuery Styles ----------------------------------*/
+@media (max-width: 768px) {
+  .offer__heading__title {
+    font-size: 17px;
+  }
+
+  .offer__heading__subtitle {
+    font-size: 16px;
+  }
+
+  .offer__list__data {
+    gap: 10px;
+    margin: 10px 0px;
+  }
+
+  .offer__list__data__item {
+    width: 85vw;
+    height: 30vh;
+  }
+
+  .offer__image {
+    width: 85vw;
+    max-width: 85vw;
+    height: 100%;
+    font-size: 17px;
+  }
+
+  .offer__bottom__content {
+    padding: 10px;
+    height: 30px;
+    font-size: 15px;
+  }
+
 }
