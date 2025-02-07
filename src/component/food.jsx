@@ -21,16 +21,18 @@ export default function food() {
                                     <div
                                         key={index} className="food__list__data__item">
                                         <img src={item.food__image} alt='image' />
-                                        <p className='food__name'>{item.food__name}</p>
-                                        <div className="price__content">
-                                            <div className='food__price'><FontAwesomeIcon icon={faIndianRupeeSign} className='rupee__icon' />{item.food__price} </div>
-                                            <div className='food__price__discount'>{item.food__price__discount}</div>
+                                        <div className="food__data">
+                                            <p className='food__name'>{item.food__name}</p>
+                                            <div className="price__content">
+                                                <div className='food__price__discount'><FontAwesomeIcon icon={faIndianRupeeSign} className='rupee__icon' />{item.food__price__discount} </div>
+                                                <div className='food__price'>{item.food__price}</div>
+                                            </div>
+                                            <div className="rating__content">
+                                                <div className='food__rating'>{item.food__rating}<FontAwesomeIcon icon={faStar} className='star__icon' />  </div>
+                                                <div className='delivery__time'>●    {item.food__delivery__time}</div>
+                                            </div>
+                                            <div className='food__delivery'>{item.food__delivery}</div>
                                         </div>
-                                        <div className="rating__content">
-                                            <div className='food__rating'>{item.food__rating}<FontAwesomeIcon icon={faStar} className='star__icon' />  </div>
-                                            <div className='delivery__time'>●    {item.food__delivery__time}</div>
-                                        </div>
-                                        <div className='food__delivery'>{item.food__delivery}</div>
                                     </div>
                                 )
                             })}
@@ -43,16 +45,18 @@ export default function food() {
                                     <div
                                         key={index} className="food__list__data__item">
                                         <img src={item.food__image} alt='image' />
-                                        <p className='food__name'>{item.food__name}</p>
-                                        <div className="price__content">
-                                            <div className='food__price'><FontAwesomeIcon icon={faIndianRupeeSign} className='rupee__icon' />{item.food__price} </div>
-                                            <div className='food__price__discount'>{item.food__price__discount}</div>
+                                        <div className="food__data">
+                                            <p className='food__name'>{item.food__name}</p>
+                                            <div className="price__content">
+                                                <div className='food__price__discount'><FontAwesomeIcon icon={faIndianRupeeSign} className='rupee__icon' />{item.food__price__discount}</div>
+                                                <div className='food__price'>{item.food__price}</div>
+                                            </div>
+                                            <div className="rating__content">
+                                                <div className='food__rating'>{item.food__rating}<FontAwesomeIcon icon={faStar} className='star__icon' />  </div>
+                                                <div className='delivery__time'>●    {item.food__delivery__time}</div>
+                                            </div>
+                                            <div className='food__delivery'>{item.food__delivery}</div>
                                         </div>
-                                        <div className="rating__content">
-                                            <div className='food__rating'>{item.food__rating}<FontAwesomeIcon icon={faStar} className='star__icon' />  </div>
-                                            <div className='delivery__time'>●    {item.food__delivery__time}</div>
-                                        </div>
-                                        <div className='food__delivery'>{item.food__delivery}</div>
                                     </div>
                                 )
                             })}

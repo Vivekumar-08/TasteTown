@@ -20,6 +20,35 @@ import menu__20 from './menu__20.jpg'
 import menu__21 from './menu__21.jpg'
 import menu__22 from './menu__22.jpg'
 import menu__23 from './menu__23.jpg'
+import food__1 from './food__1.jpg'
+import food__2 from './food__2.jpg'
+import food__3 from './food__3.jpg'
+import food__4 from './food__4.jpg'
+import food__5 from './food__5.jpg'
+import food__6 from './food__6.jpg'
+import food__7 from './food__7.jpg'
+import food__8 from './food__8.jpg'
+import food__9 from './food__9.jpg'
+import food__10 from './food__10.jpg'
+import food__11 from './food__11.jpg'
+import food__12 from './food__12.jpg'
+import food__13 from './food__13.jpg'
+import food__14 from './food__14.jpg'
+import food__15 from './food__15.jpg'
+import food__16 from './food__16.jpg'
+import food__17 from './food__17.jpg'
+import food__18 from './food__18.jpg'
+import food__19 from './food__19.jpg'
+import food__20 from './food__20.jpg'
+import food__21 from './food__21.jpg'
+import food__22 from './food__22.jpg'
+import food__23 from './food__23.jpg'
+import food__24 from './food__24.jpg'
+import food__25 from './food__25.jpg'
+import food__26 from './food__26.jpg'
+
+
+
 
 import offer__1 from './offer__1.jpg'
 
@@ -136,81 +165,81 @@ export const menu__list__01 = [
 
 export const menu__food = [
     {
-        food__image: menu__3,
-        food__name: "Burger",
-        food__price: "10",
-        food__price__discount: "20",
+        food__image: food__8,
+        food__name: "Chicken Pizza",
+        food__price: "249",
+        food__price__discount: "199",
         food__rating: "4.5",
         food__delivery__time: "30 min",
         food__delivery: "Free Delivery",
         food__category: "Fast Food",
     },
     {
-        food__image: menu__7,
-        food__name: "Burger",
-        food__price: "10",
-        food__price__discount: "20",
-        food__rating: "4.5",
+        food__image: food__9,
+        food__name: "Chilli Mashroom",
+        food__price: "199",
+        food__price__discount: "149",
+        food__rating: "4.7",
         food__delivery__time: "30 min",
         food__delivery: "Free Delivery",
         food__category: "Fast Food",
     },
     {
-        food__image: menu__7,
-        food__name: "Burger",
-        food__price: "10",
-        food__price__discount: "20",
-        food__rating: "4.5",
+        food__image: food__2,
+        food__name: "Aloo Paratha with Curd & Pickle",
+        food__price: "99",
+        food__price__discount: "79",
+        food__rating: "4.7",
         food__delivery__time: "30 min",
         food__delivery: "Free Delivery",
         food__category: "Fast Food",
     },
     {
-        food__image: menu__7,
-        food__name: "Burger",
-        food__price: "10",
-        food__price__discount: "20",
-        food__rating: "4.5",
+        food__image: food__4,
+        food__name: "Butterscotch ice-cream",
+        food__price: "89",
+        food__price__discount: "69",
+        food__rating: "4",
         food__delivery__time: "30 min",
         food__delivery: "Free Delivery",
         food__category: "Fast Food",
     },
     {
-        food__image: menu__7,
-        food__name: "Burger",
-        food__price: "10",
-        food__price__discount: "20",
+        food__image: food__16,
+        food__name: "Double Egg Chicken Roll",
+        food__price: "79",
+        food__price__discount: "99",
         food__rating: "4.5",
+        food__delivery__time: "35 min",
+        food__delivery: "Free Delivery",
+        food__category: "Fast Food",
+    },
+    {
+        food__image: food__1,
+        food__name: "Aloo Gobi Masala",
+        food__price: "99",
+        food__price__discount: "79",
+        food__rating: "4.6",
+        food__delivery__time: "35 min",
+        food__delivery: "Free Delivery",
+        food__category: "Fast Food",
+    },
+    {
+        food__image: food__18,
+        food__name: "Egg Masala",
+        food__price: "99",
+        food__price__discount: "49",
+        food__rating: "4.6",
         food__delivery__time: "30 min",
         food__delivery: "Free Delivery",
         food__category: "Fast Food",
     },
     {
-        food__image: menu__7,
-        food__name: "Burger",
-        food__price: "10",
-        food__price__discount: "20",
-        food__rating: "4.5",
-        food__delivery__time: "30 min",
-        food__delivery: "Free Delivery",
-        food__category: "Fast Food",
-    },
-    {
-        food__image: menu__7,
-        food__name: "Burger",
-        food__price: "10",
-        food__price__discount: "20",
-        food__rating: "4.5",
-        food__delivery__time: "30 min",
-        food__delivery: "Free Delivery",
-        food__category: "Fast Food",
-    },
-    {
-        food__image: menu__7,
-        food__name: "Burger",
-        food__price: "10",
-        food__price__discount: "20",
-        food__rating: "4.5",
+        food__image: food__19,
+        food__name: "Butter Chicken",
+        food__price: "199",
+        food__price__discount: "149",
+        food__rating: "4.6",
         food__delivery__time: "30 min",
         food__delivery: "Free Delivery",
         food__category: "Fast Food",
@@ -219,80 +248,80 @@ export const menu__food = [
 ]
 export const menu__food__01 = [
     {
-        food__image: menu__3,
-        food__name: "Burger",
-        food__price: "50",
-        food__price__discount: "20",
+        food__image: food__5,
+        food__name: "Chicken Biryani",
+        food__price: "199",
+        food__price__discount: "149",
+        food__rating: "4.8",
+        food__delivery__time: "32 min",
+        food__delivery: "Free Delivery",
+        food__category: "Fast Food",
+    },
+    {
+        food__image: food__3,
+        food__name: "Butter Chicken Roll",
+        food__price: "99",
+        food__price__discount: "79",
+        food__rating: "4.8",
+        food__delivery__time: "35 min",
+        food__delivery: "Free Delivery",
+        food__category: "Fast Food",
+    },
+    {
+        food__image: food__6,
+        food__name: "Chicken Biryani",
+        food__price: "249",
+        food__price__discount: "199",
+        food__rating: "4.6",
+        food__delivery__time: "30 min",
+        food__delivery: "Free Delivery",
+        food__category: "Fast Food",
+    },
+    {
+        food__image: food__7,
+        food__name: "Chicken Burger",
+        food__price: "99",
+        food__price__discount: "79",
         food__rating: "4.5",
         food__delivery__time: "30 min",
         food__delivery: "Free Delivery",
         food__category: "Fast Food",
     },
     {
-        food__image: menu__7,
-        food__name: "Burger",
-        food__price: "10",
-        food__price__discount: "20",
+        food__image: food__10,
+        food__name: "Noodles",
+        food__price: "99",
+        food__price__discount: "79",
         food__rating: "4.5",
         food__delivery__time: "30 min",
         food__delivery: "Free Delivery",
         food__category: "Fast Food",
     },
     {
-        food__image: menu__7,
-        food__name: "Burger",
-        food__price: "10",
-        food__price__discount: "20",
-        food__rating: "4.5",
+        food__image: food__11,
+        food__name: "Chocolate Truffle Cake",
+        food__price: "499",
+        food__price__discount: "399",
+        food__rating: "4.3",
         food__delivery__time: "30 min",
         food__delivery: "Free Delivery",
         food__category: "Fast Food",
     },
     {
-        food__image: menu__7,
-        food__name: "Burger",
-        food__price: "10",
-        food__price__discount: "20",
-        food__rating: "4.5",
+        food__image: food__12,
+        food__name: "Corn Pizza",
+        food__price: "199",
+        food__price__discount: "149",
+        food__rating: "4.6",
         food__delivery__time: "30 min",
         food__delivery: "Free Delivery",
         food__category: "Fast Food",
     },
     {
-        food__image: menu__7,
-        food__name: "Burger",
-        food__price: "10",
-        food__price__discount: "20",
-        food__rating: "4.5",
-        food__delivery__time: "30 min",
-        food__delivery: "Free Delivery",
-        food__category: "Fast Food",
-    },
-    {
-        food__image: menu__7,
-        food__name: "Burger",
-        food__price: "10",
-        food__price__discount: "20",
-        food__rating: "4.5",
-        food__delivery__time: "30 min",
-        food__delivery: "Free Delivery",
-        food__category: "Fast Food",
-    },
-    {
-        food__image: menu__7,
-        food__name: "Burger",
-        food__price: "10",
-        food__price__discount: "20",
-        food__rating: "4.5",
-        food__delivery__time: "30 min",
-        food__delivery: "Free Delivery",
-        food__category: "Fast Food",
-    },
-    {
-        food__image: menu__7,
-        food__name: "Burger",
-        food__price: "10",
-        food__price__discount: "20",
+        food__image: food__13,
+        food__name: "Dahi Vada",
+        food__price: "99",
+        food__price__discount: "79",
         food__rating: "4.5",
         food__delivery__time: "30 min",
         food__delivery: "Free Delivery",
