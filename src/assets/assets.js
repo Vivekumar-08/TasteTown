@@ -47,11 +47,6 @@ import food__24 from './food__24.jpg'
 import food__25 from './food__25.jpg'
 import food__26 from './food__26.jpg'
 
-
-
-
-import offer__1 from './offer__1.jpg'
-
 export const menu__list = [
     {
         menu__name: "Burger",
@@ -327,7 +322,6 @@ export const menu__food__01 = [
         food__delivery: "Free Delivery",
         food__category: "Fast Food",
     },
-
 ]
 
 export const offer__list = [
@@ -337,15 +331,14 @@ export const offer__list = [
     },
     {
         offer__name: "Burger",
-        offer__price__discount: "Up to 5% Off",
+        offer__price__discount: "Up to 50% Off",
     },
     {
         offer__name: "Burger",
-        offer__price__discount: "Up to 5% Off",
+        offer__price__discount: "Up to 54% Off",
     },
     {
         offer__name: "Burger",
-        offer__price__discount: "Up to 5% Off",
+        offer__price__discount: "Up to 45% Off",
     },
-
 ]

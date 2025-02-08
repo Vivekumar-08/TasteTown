@@ -29,7 +29,7 @@ export default function Header() {
             setSearchQuery('');
         }
     };
-    
+
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (menuRef.current && !menuRef.current.contains(event.target)) {
