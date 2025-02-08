@@ -590,12 +590,11 @@ li:hover {
   padding-bottom: 8px;
   background-size: cover;
   justify-content: center;
-  align-items: last baseline;
+  align-items: flex-end;
   background-position: center;
   background-repeat: no-repeat;
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-image: url('./assets/food__23.jpg');
+  border-top-right-radius: 10px; 
 }
 
 .offer__bottom__content {

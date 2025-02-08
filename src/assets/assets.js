@@ -326,19 +326,38 @@ export const menu__food__01 = [
 
 export const offer__list = [
     {
-        offer__name: "Burger",
+        offer__name: "Diavola Pizza",
+        offer__image: food__15,
         offer__price__discount: "Up to 50% Off",
     },
     {
-        offer__name: "Burger",
+        offer__name: "Fried Rice",
+        offer__image: food__23,
         offer__price__discount: "Up to 50% Off",
     },
     {
-        offer__name: "Burger",
+        offer__name: "Egg Fried Rice",
+        offer__image: food__20,
         offer__price__discount: "Up to 54% Off",
     },
     {
-        offer__name: "Burger",
+        offer__name: "Dal Tadka",
+        offer__image: food__14,
         offer__price__discount: "Up to 45% Off",
+    },
+    {
+        offer__name: "Egg Chicken Roll",
+        offer__image: food__17,
+        offer__price__discount: "Up to 40% Off",
+    },
+    {
+        offer__name: "momos",
+        offer__image: food__24,
+        offer__price__discount: "Up to 45% Off",
+    },
+    {
+        offer__name: "Chicken Noodles",
+        offer__image: food__22,
+        offer__price__discount: "Up to 30% Off",
     },
 ]

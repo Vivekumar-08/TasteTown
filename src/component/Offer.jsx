@@ -16,7 +16,9 @@ export default function Offer() {
             {offer__list.map((item, index) => {
               return (
                 <div key={index} className="offer__list__data__item">
-                  <div className="offer__image"><p className='offer__name'>{item.offer__name}</p></div>
+                  <div className="offer__image" style={{ backgroundImage: `url(${item.offer__image})` }}>
+                    <p className='offer__name'>{item.offer__name}</p>
+                  </div>
                   <div className="offer__bottom__content">
                     <div className="offer__discount__price">{item.offer__price__discount}</div>
                     <FontAwesomeIcon icon={faArrowRight} />
