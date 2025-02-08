@@ -542,7 +542,7 @@ li:hover {
 .offer__container {
   background-color: #ffffff;
   height: 90vh;
-  padding: 0 20px 0 20px;
+  padding: 0 40px 0 40px;
   padding-top: 13vh;
 }
 
@@ -559,7 +559,7 @@ li:hover {
 }
 
 .offer__list__data {
-  gap: 42px;
+  gap: 20px;
   display: flex;
   margin: 36px 0px;
   overflow-x: scroll;
@@ -614,6 +614,10 @@ li:hover {
 
 /*-------------------------------- Offer MediaQuery Styles ----------------------------------*/
 @media (max-width: 768px) {
+  .offer__container{
+    padding: 0 20px 0 20px;
+    padding-top: 13vh;
+  }
   .offer__heading__title {
     font-size: 17px;
   }
