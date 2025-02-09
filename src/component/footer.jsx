@@ -35,13 +35,10 @@ export default function Footer() {
                             <ul>
                                 <li>Bihar</li>
                                 <li>Delhi</li>
+                                <li>Odisha</li>
                                 <li>Mumbai</li>
-                                <li>Chennai</li>
-                                <li>Kolkata</li>
-                                <li>Bangalore</li>
-                                <li>Hyderabad</li>
-                                <li>Pune</li>
-                                <li>Jaipur</li>
+                                <li>Chennai</li> 
+                                <li>Bangalore</li>  
                             </ul>
                         </div>
                     </div>
@@ -68,6 +65,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
+                <div className="created">Created by ❤️ <strong>Vivek</strong></div>
                 <div className="footer-bottom">
                     <div className="footer-bottom-container">
                         <p>&copy; 2025 Taste Town. All Rights Reserved</p>

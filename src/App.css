@@ -89,14 +89,14 @@ li:hover {
 /*-------------------------------- Header MediaQuery Styles ----------------------------------*/
 @media (max-width: 768px) {
   .logo img {
-    width: 120px;
+    width: 130px;
     height: auto;
     display: flex;
     align-items: center;
   }
 
   .header {
-    height: 60px;
+    height: 65px;
   }
 
 
@@ -137,7 +137,7 @@ li:hover {
   }
 
   a {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .searchIcon {
@@ -160,8 +160,9 @@ li:hover {
   input {
     width: 60vw;
     height: 5vh;
-    padding: 5px;
-    border-radius: 3px;
+    padding: 5px; 
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
     border: 1px solid #ccc;
   }
 
@@ -170,8 +171,9 @@ li:hover {
     width: 17vw;
     border: none;
     color: white;
-    cursor: pointer;
-    border-radius: 3px;
+    cursor: pointer; 
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     background-color: #FF2B2B;
   }
 
@@ -251,18 +253,18 @@ li:hover {
   }
 
   .home__title {
-    font-size: 17px;
+    font-size: 19px;
   }
 
   .home__subtitle {
     margin-top: 3vh;
-    font-size: 11px;
+    font-size: 16px;
   }
 
   .order {
-    width: 32vw;
-    height: 5vh;
-    font-size: 15px;
+    width: 34vw;
+    height: 5.5vh;
+    font-size: 16px;
   }
 }
 
@@ -476,7 +478,7 @@ li:hover {
 @media screen and (max-width: 768px) {
   .menu__food__content {
     padding-top: 3vh;
-    padding: 0 20px 0 20px;
+    padding: 0 24px 0 24px;
     padding-bottom: 3px;
   }
 
@@ -505,35 +507,35 @@ li:hover {
   }
 
   .food__name {
-    font-size: 10px;
-  }
-
-  .rupee__icon {
     font-size: 12px;
   }
 
+  .rupee__icon {
+    font-size: 13px;
+  }
+
   .price__content {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .food__price__discount {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .rating__content {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .star__icon {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .delivery__time {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .food__delivery {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -573,7 +575,7 @@ li:hover {
 
 .offer__list__data__item {
   width: 30vw;
-  height: 46.7vh;
+  height: 46.5vh;
   border-radius: 10px;
   background-color: #ffffff;
   box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
@@ -581,7 +583,7 @@ li:hover {
 
 .offer__image {
   width: 30vw;
-  height: 40vh;
+  height: 39.5vh;
   display: flex;
   color: white;
   max-width: 30vw;
@@ -615,15 +617,15 @@ li:hover {
 /*-------------------------------- Offer MediaQuery Styles ----------------------------------*/
 @media (max-width: 768px) {
   .offer__container{
-    padding: 0 20px 0 20px;
+    padding: 0 23px 0 23px;
     padding-top: 13vh;
   }
   .offer__heading__title {
-    font-size: 17px;
+    font-size: 19px;
   }
 
   .offer__heading__subtitle {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .offer__list__data {
@@ -633,7 +635,7 @@ li:hover {
 
   .offer__list__data__item {
     width: 86vw;
-    height: 40vh;
+    height: 38.5vh;
   }
 
   .offer__image {
@@ -668,8 +670,7 @@ li:hover {
 
 .menu-item-footer ul {
   display: flex;
-  font-size: 18px;
-  cursor: pointer;
+  font-size: 18px; 
   font-weight: 500;
   color: #000000;
   padding-left: 16px;
@@ -687,8 +688,7 @@ li:hover {
 
 .location-delivery ul {
   display: flex;
-  font-size: 18px;
-  cursor: pointer;
+  font-size: 18px; 
   font-weight: 500;
   color: #4f4f4f;
   flex-direction: column;
@@ -737,8 +737,7 @@ li:hover {
 
 .social-media ul {
   display: flex;
-  font-size: 18px;
-  cursor: pointer;
+  font-size: 18px; 
   font-weight: 500;
   color: #000000;
   flex-direction: column;
@@ -751,6 +750,14 @@ li:hover {
 
 .social-media ul li {
   padding: 5px;
+}
+
+.created {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+  background-color: #ff816b;
 }
 
 .footer-bottom-container {
@@ -772,11 +779,11 @@ li:hover {
   }
 
   .logo-footer img {
-    width: 120px;
+    width: 125px;
   }
 
   .menu-item-footer ul {
-    font-size: 14px;
+    font-size: 16px;
     padding-left: 8px;
   }
 
@@ -785,12 +792,12 @@ li:hover {
   }
 
   h2 {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .location-delivery ul {
     padding-left: 0;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .location-delivery ul li {
@@ -798,11 +805,11 @@ li:hover {
   }
 
   .location-name {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .location-address {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .location-image img {
@@ -811,11 +818,11 @@ li:hover {
 
   .social-media ul {
     padding-left: 0;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .social-media ul li {
-    padding: 2px;
+    padding: 1.5px;
   }
 
   .footer-bottom-container {

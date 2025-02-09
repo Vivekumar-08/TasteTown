@@ -181,7 +181,7 @@ export const menu__food = [
     },
     {
         food__image: food__2,
-        food__name: "Aloo Paratha with Curd & Pickle",
+        food__name: "Aloo Paratha",
         food__price: "99",
         food__price__discount: "79",
         food__rating: "4.7",
