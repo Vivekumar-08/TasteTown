@@ -6,7 +6,7 @@ import { getFirestore, setDoc, doc } from 'firebase/firestore';
 import { createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/auth';
 import { toast } from 'react-toastify';
 
-export default function SignIn() {
+export default function Signin() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
