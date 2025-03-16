@@ -48,9 +48,6 @@ export default function SignIn() {
                 if (auth.currentUser.emailVerified) {
                     setEmailVerified(true);
                     setLoading(false);
-                    await setDoc(doc(db, 'users', user.email), {
-                        emailVerified: false,
-                    });
                     clearInterval(checkVerification);
                     localStorage.setItem("isAuthenticated", "true");
                     toast.success('Email verified! Redirecting to TasteTown...', { position: "top-center" });
