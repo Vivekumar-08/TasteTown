@@ -10,6 +10,7 @@ import {
     faLinkedin,
     faSquareGithub
 } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
@@ -22,10 +23,10 @@ export default function Footer() {
                         </div>
                         <div className="menu-item-footer">
                             <ul>
-                                <li><a href='#home'>Home</a></li>
-                                <li><a href='#about'>About</a></li>
-                                <li><a href='#menu'>Menu</a></li>
-                                <li><a href='#offer'>Offers</a></li>
+                                <li><Link to='/'>Home</Link></li>
+                                <li><Link to='/about'>About</Link></li>
+                                <li><Link to='/menu'>Menu</Link></li>
+                                <li><Link to='/offer'>Offers</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -56,11 +57,11 @@ export default function Footer() {
                         <h2>Social links</h2>
                         <div className="social-media">
                             <ul>
-                                <li><a href='https://x.com/vk8584686'><FontAwesomeIcon icon={faSquareXTwitter} /> Twitter</a></li>
-                                <li><a href='https://github.com/Vivekumar-08'><FontAwesomeIcon icon={faSquareGithub} />   GitHub</a></li>
-                                <li><a href='https://www.linkedin.com/in/vivek-kumar08'><FontAwesomeIcon icon={faLinkedin} />   LinkedIn</a></li>
-                                <li><a href='https://www.facebook.com/therealvivek08'><FontAwesomeIcon icon={faSquareFacebook} />  Facebook</a></li>
-                                <li><a href='https://www.instagram.com/the_______real_______vivek__08/'><FontAwesomeIcon icon={faSquareInstagram} />    Instagram</a></li>
+                                <li><Link to='https://x.com/vk8584686'><FontAwesomeIcon icon={faSquareXTwitter} /> Twitter</Link></li>
+                                <li><Link to='https://github.com/Vivekumar-08'><FontAwesomeIcon icon={faSquareGithub} />   GitHub</Link></li>
+                                <li><Link to='https://www.linkedin.com/in/vivek-kumar08'><FontAwesomeIcon icon={faLinkedin} />   LinkedIn</Link></li>
+                                <li><Link to='https://www.facebook.com/therealvivek08'><FontAwesomeIcon icon={faSquareFacebook} />  Facebook</Link></li>
+                                <li><Link to='https://www.instagram.com/the_______real_______vivek__08/'><FontAwesomeIcon icon={faSquareInstagram} />    Instagram</Link></li>
                             </ul>
                         </div>
                     </div>

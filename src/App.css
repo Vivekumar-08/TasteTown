@@ -21,56 +21,72 @@ body {
   width: 100%;
   display: flex;
   position: fixed;
-  padding: 0 20px;
+  padding: 0 100px;
   align-items: center;
   justify-content: space-between;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 2px 4px 0.1px rgba(0, 0, 0, 0.1);
 }
 
-input {
-  width: 25vw;
-  height: 6vh;
-  padding: 5px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-}
-
 .search {
   display: flex;
   z-index: 1000;
   padding: 10px 20px;
-  background: #ffffff;
 }
 
-.search button {
+input {
+  width: 30vw;
+  height: 6vh;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.searchButton {
   width: 4vw;
   height: 6vh;
   border: none;
   color: white;
   cursor: pointer;
-  border-radius: 3px;
   background-color: #FF2B2B;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 .headerContent__location {
-  font-size: 26px;
+  text-align: center;
+}
+
+.headerContent__location button {
+  border: none;
+  font-size: 19px;
+  background-color: transparent;
+}
+
+.currentAddress {
+  font-size: 13px;
+  color: #4a4a4a;
 }
 
 ul li {
-  padding: 18px;
+  padding: 0 0 0 30px;
   display: inline;
 }
 
 a {
+  font-size: 16px;
+  font-style: bold;
   color: #000000;
   text-decoration: none;
 }
 
-li:hover {
-  padding: 2px;
-  border-radius: 10px;
-  border: #000000 1.5px solid;
+sup img {
+  width: 50px;
+}
+
+a:hover {
+  color: #FF2B2B;
 }
 
 .menu {
@@ -96,9 +112,9 @@ li:hover {
   }
 
   .header {
+    padding: 0 20px;
     height: 65px;
   }
-
 
   .search {
     display: none;
@@ -109,16 +125,16 @@ li:hover {
   }
 
   .menu.active {
-    left: 0;
+    right: 0;
     top: 60px;
-    width: 100%;
+    width: 70%;
+    height: 60vh;
     display: flex;
     z-index: 1000;
-    padding: 10px;
+    padding: 20px 10px;
     position: absolute;
     background: #ffffff;
-    justify-content: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: start;
   }
 
   .menuBar {
@@ -132,16 +148,32 @@ li:hover {
     background-color: transparent;
   }
 
-  ul li {
-    padding: 5px;
+  .menuBar button {
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: transparent;
   }
 
-  a {
-    font-size: 12px;
+  ul li {
+    display: flex;
+    padding: 0 0 0 5px;
+    flex-direction: column;
+  }
+
+  sup img {
+    width: 30px;
   }
 
   .searchIcon {
     display: block;
+  }
+
+  .searchIcon button {
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: transparent;
   }
 
   .search.active {
@@ -160,7 +192,7 @@ li:hover {
   input {
     width: 60vw;
     height: 5vh;
-    padding: 5px; 
+    padding: 5px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     border: 1px solid #ccc;
@@ -171,7 +203,7 @@ li:hover {
     width: 17vw;
     border: none;
     color: white;
-    cursor: pointer; 
+    cursor: pointer;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     background-color: #FF2B2B;
@@ -185,14 +217,21 @@ li:hover {
   }
 
   .headerContent__location {
+    margin-left: 20px;
+  }
+
+  .headerContent__location button {
     font-size: 20px;
-    margin-left: 50px;
+  }
+
+  .currentAddress {
+    font-size: 10px;
   }
 }
 
 /*-------------------------------- Home Styles sheet ----------------------------------*/
 .home {
-  margin: 0 20px 0 20px;
+  margin: 0 100px 0 100px;
   background-color: #ffffff;
 }
 
@@ -244,6 +283,10 @@ li:hover {
 
 /*-------------------------------- Header MediaQuery Styles ----------------------------------*/
 @media (max-width: 768px) {
+  .home {
+    margin: 0 20px 0 20px;
+  }
+
   .home__container {
     flex-direction: column-reverse;
   }
@@ -272,7 +315,7 @@ li:hover {
 .menuBody {
   width: 100%;
   height: 80vh;
-  padding: 0 20px 0 20px;
+  padding: 0 112px 0 112px;
   padding-top: 12vh;
   background-color: #f1eeeee8;
 }
@@ -337,6 +380,7 @@ li:hover {
 @media (max-width: 768px) {
   .menuBody {
     height: 70vh;
+    padding: 0 24px 0 24px;
   }
 
   .menu__container {
@@ -366,9 +410,9 @@ li:hover {
 .menu__food__content {
   background-color: #f1eeeee8;
   height: 100%;
-  padding: 0 110px 0 110px;
+  padding: 0 100px 0 100px;
   width: 100%;
-  padding-top: 6vh;
+  padding-top: 12vh;
   padding-bottom: 3px;
 }
 
@@ -544,7 +588,7 @@ li:hover {
 .offer__container {
   background-color: #ffffff;
   height: 90vh;
-  padding: 0 40px 0 40px;
+  padding: 0 100px 0 100px;
   padding-top: 13vh;
 }
 
@@ -596,7 +640,7 @@ li:hover {
   background-position: center;
   background-repeat: no-repeat;
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px; 
+  border-top-right-radius: 10px;
 }
 
 .offer__bottom__content {
@@ -616,10 +660,11 @@ li:hover {
 
 /*-------------------------------- Offer MediaQuery Styles ----------------------------------*/
 @media (max-width: 768px) {
-  .offer__container{
+  .offer__container {
     padding: 0 23px 0 23px;
     padding-top: 13vh;
   }
+
   .offer__heading__title {
     font-size: 19px;
   }
@@ -670,16 +715,15 @@ li:hover {
 
 .menu-item-footer ul {
   display: flex;
-  font-size: 18px; 
+  font-size: 18px;
   font-weight: 500;
   color: #000000;
   padding-left: 16px;
   flex-direction: column;
 }
 
-.menu-item-footer ul li:hover {
-  border: none;
-  border-radius: none;
+.menu-item-footer a:hover {
+  color: #000000;
 }
 
 .menu-item-footer ul li {
@@ -688,15 +732,10 @@ li:hover {
 
 .location-delivery ul {
   display: flex;
-  font-size: 18px; 
+  font-size: 18px;
   font-weight: 500;
   color: #4f4f4f;
   flex-direction: column;
-}
-
-.location-delivery ul li:hover {
-  border: none;
-  border-radius: none;
 }
 
 .location-delivery ul li {
@@ -709,43 +748,53 @@ li:hover {
   color: #000000;
 }
 
-.location-address {
+.location-address a {
   font-size: 15px;
   font-weight: 500;
   color: #4f4f4f;
 }
 
-.mail {
+.location-address a:hover {
+  color: #000000;
+}
+
+.mail a {
   font-size: 15px;
   font-weight: 500;
   color: #4f4f4f;
 }
 
-.phone {
+.mail a:hover {
+  color: #000000;
+}
+
+.phone a {
   font-size: 15px;
   font-weight: 500;
   color: #4f4f4f;
 }
 
-.location-image img {
+.phone a:hover {
+  color: #000000;
+}
+
+.location-image {
   width: 100%;
-  height: auto;
-  max-width: 350px;
+  max-width: 400px;
   margin-top: 20px;
   box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
 }
 
 .social-media ul {
   display: flex;
-  font-size: 18px; 
+  font-size: 18px;
   font-weight: 500;
   color: #000000;
   flex-direction: column;
 }
 
-.social-media ul li:hover {
-  border: none;
-  border-radius: none;
+.social-media a:hover {
+  color: #000000;
 }
 
 .social-media ul li {
@@ -812,7 +861,7 @@ li:hover {
     font-size: 14px;
   }
 
-  .location-image img {
+  .location-image {
     display: none;
   }
 
@@ -826,6 +875,56 @@ li:hover {
   }
 
   .footer-bottom-container {
+    font-size: 14px;
+  }
+}
+
+
+/*-------------------------------- Profile Styles ----------------------------------*/
+.profile button {
+  border: none;
+  font-size: 21px;
+  cursor: pointer;
+  background-color: transparent;
+  padding-top: 11px;
+}
+
+.profileDropdown {
+  background-color: #ffffff;
+  height: 5vh;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: absolute;
+}
+
+.profileDropdown ul li {
+  padding: 0px;
+}
+
+.profileDropdown .logout-btn {
+  font-size: 16px;
+  cursor: pointer;
+  padding-top: 11px;
+}
+
+/*-------------------------------- Profile MediaQuery Styles ----------------------------------*/
+@media (max-width: 768px) {
+  .profile button {
+    font-size: 17px;
+    padding-top: 0;
+  }
+
+  .profileDropdown {
+    height: 4vh;
+  }
+
+  .profileDropdown ul li {
+    padding: 0px;
+  }
+
+  .profileDropdown .logout-btn {
     font-size: 14px;
   }
 }

@@ -2,93 +2,91 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 /*------------------------- login style sheet -------------------------*/
 .loginForm {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 400px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #ccc;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(125deg, #ff2b2b 50%, #f5f7fa 50%);
 }
 
-input {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
+.login-form {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
     border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #ccc;
+    background: linear-gradient(125deg, #ff2b2b 52%, #f5f7fa 50%);
+}
+
+.loginInput {
     width: 95%;
-    font-size: 13px;
+    padding: 10px;
     color: #000;
+    margin: 10px 0;
+    font-size: 13px;
     cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
     background-color: #f5f7fa;
 }
 
-input:hover {
-    border: 1px solid #ccc;
-}
-
-button {
+.loginBtn {
     width: 80%;
-    font-size: 16px;
-    margin: 10px 0;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f1f1f1;
+    margin: 10px 0;
     cursor: pointer;
+    font-size: 16px;
     font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
 }
 
 .forget {
     color: #000;
     font-size: 14px;
     align-self: end;
+    text-decoration: underline;
 }
 
 h1 {
     color: #fff;
 }
 
-.sub__title {
+.login__sub__title {
     color: #000;
-    font-size: 17px;
-    margin-bottom: 10px;
+    font-size: 18px;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
-button:hover {
-    background-color: #ff2b2b;
+.loginBtn:hover {
     color: white;
+    background-color: #ff2b2b;
 }
 
-.signup {
+.signin-page {
     color: #000;
     font-size: 14px;
 }
 
-.signup a {
-    text-decoration: underline;
+.signin-page a {
     color: #ff2b2b;
     font-weight: 600;
+    text-decoration: underline;
 }
 
 /*------------------------- login mediaquery style sheet -------------------------*/
@@ -103,15 +101,19 @@ button:hover {
         font-size: 21px;
     }
 
-    .sub__title {
+    .login__sub__title {
         font-size: 16px;
     }
 
-    button {
+    .loginBtn {
         font-size: 14px;
     }
 
-    .login {
+    .signin-page {
         font-size: 13px;
+    }
+
+    .login-form {
+        margin: 0 20px 0 20px;
     }
 }

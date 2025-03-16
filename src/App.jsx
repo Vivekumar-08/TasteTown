@@ -1,21 +1,27 @@
 import './App.css'
 import Header from './component/header'
 import Home from './component/home'
-import Menu from './component/menu'
 import Food from './component/food'
 import Offer from './component/Offer'
-import Footer from './component/footer'
+import SignIn from './component/signin'
+import Login from './component/login'
+import { Routes, Route } from "react-router-dom";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
   return (
     <>
       <Header />
-      <Home />
-      <Menu />
-      <Food />
-      <Offer />
-      <Footer />
+      <ToastContainer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path='/food' element={<Food />} />
+        <Route path='/offer' element={<Offer />} />
+        <Route path='/signin' element={<SignIn />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </>
   )
 }
