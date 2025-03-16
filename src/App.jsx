@@ -3,7 +3,7 @@ import Header from './component/header'
 import Home from './component/home'
 import Food from './component/food'
 import Offer from './component/Offer'
-import Signin from './component/signin'
+import Signin from './component/signIn'
 import Login from './component/login'
 import { Routes, Route } from "react-router-dom";
 import { ToastContainer } from 'react-toastify';

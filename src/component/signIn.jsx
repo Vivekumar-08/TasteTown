@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './signin.css';
+import './signIn.css';
 import { Link } from 'react-router-dom';
 import { auth } from './firebase';
 import { getFirestore, setDoc, doc } from 'firebase/firestore';
