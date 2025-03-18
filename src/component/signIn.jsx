@@ -42,7 +42,6 @@ export default function Signin() {
                 emailVerified: false,
             });
 
-
             const checkVerification = setInterval(async () => {
                 await user.reload();
                 if (auth.currentUser.emailVerified) {

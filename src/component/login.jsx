@@ -8,14 +8,14 @@ import { toast } from 'react-toastify';
 export default function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const navigate = useNavigate();  
+    const navigate = useNavigate();
 
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
             const userCredential = await signInWithEmailAndPassword(auth, email, password);
             const user = userCredential.user;
- 
+        
             if (!user.emailVerified) {
                 toast.warn('Please verify your email before logging in.', {
                     position: "top-center",
@@ -27,7 +27,7 @@ export default function Login() {
                 });
                 return;
             }
- 
+        
             toast.success('Login successful! Welcome back to TasteTown 🎉', {
                 position: "top-center",
                 autoClose: 3000,
@@ -35,14 +35,20 @@ export default function Login() {
                 closeOnClick: true,
                 pauseOnHover: true,
                 draggable: true,
+                onClose: () => navigate('/'), // Navigate after toast disappears
             });
- 
-            setTimeout(() => {
-                navigate('/');
-            }, 3000);
-
+        
         } catch (error) {
-            toast.error(error.message, {
+            let errorMessage = "An error occurred. Please try again.";
+            if (error.code === "auth/user-not-found") {
+                errorMessage = "No user found with this email.";
+            } else if (error.code === "auth/wrong-password") {
+                errorMessage = "Incorrect password. Please try again.";
+            } else if (error.code === "auth/too-many-requests") {
+                errorMessage = "Too many attempts. Please try again later.";
+            }
+        
+            toast.error(errorMessage, {
                 position: "top-center",
                 autoClose: 3000,
                 hideProgressBar: false,
@@ -50,8 +56,9 @@ export default function Login() {
                 pauseOnHover: true,
                 draggable: true,
             });
+            return;
         }
-
+        
         localStorage.setItem("isAuthenticated", "true");
         setTimeout(() => {
             toast.success('Login successful! Welcome back to TasteTown 🎉', {
